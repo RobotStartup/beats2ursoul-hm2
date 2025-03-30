@@ -3,3 +3,219 @@
 Theme Name: house music 2
 
 */
+
+body {
+    color: #333333;
+    background-color: lightcyan;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0; /* Add this to remove default margin */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+a:link,
+a:visited {
+    color: rgb(14, 11, 11);
+}
+
+p {
+    line-height: 1.65em;
+}
+
+/* This controls the borders of the content on all pages and posts*/
+div.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+/* Main content area */
+.main-content {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Front page heading */
+.main-content h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Front page.php */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.post {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: white; /* Optional: adds contrast against lightcyan background */
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #FF69B4;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Header styling (site logo and site icon) */
+.site-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+/* Logo container - align to the left */
+.logo-container {
+    margin-right: auto; /* This pushes everything else to the right */
+}
+
+.logo-container img {
+    max-height: 80px; /* Adjust based on your logo size */
+    width: auto;
+}
+
+/* Site branding (title and description) */
+.site-branding {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Navigation - full width below the header */
+.site-nav {
+    background: linear-gradient(to right, black, #FF69B4); /* gives the gradient black to pink in footer menu */
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+}
+
+/* increase gap in blocks in footer nav menu only */
+.site-nav:not(.site-footer .site-nav) ul {
+    display: flex;
+    gap: 100px; /* Increased gap for header nav only */
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 920px;
+}
+
+
+.site-nav .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.site-nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.site-nav ul li a:hover {
+    background-color: #FF69B4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .site-branding {
+        margin-left: 0;
+    }
+    
+    .site-nav .nav-menu {
+        flex-direction: column;
+    }
+    
+    .post {
+        width: 100%;
+    }
+}
+
+/* Footer Navigation - Horizontal without bullets */
+.site-footer .site-nav {
+    background: linear-gradient(to right, #1e2022, #FF69B4); /* Blue to pink gradient */
+    padding: 15px 0; /* Adjust padding as needed */
+    width: 100%;
+    margin: 0;
+}
+
+.site-footer .site-nav ul {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto; /* Center the menu */
+    padding: 0;
+    max-width: 920px; /* Match header nav width */
+}
+
+.site-footer .site-nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer .site-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white; /* White text for contrast */
+    font-size: 18px; /* Match header nav font size */
+    padding: 15px 20px; /* Match header nav padding */
+    transition: background-color 0.3s ease;
+}
+
+.site-footer .site-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white on hover */
+}
